@@ -1,4 +1,6 @@
 package latihan2;
 
-public class Berenang {
+public interface Berenang {
+    void berenang();
+    void menyelam();
 }

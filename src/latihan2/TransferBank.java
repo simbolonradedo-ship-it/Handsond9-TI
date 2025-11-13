@@ -1,4 +1,15 @@
 package latihan2;
 
-public class TransferBank {
+public class TransferBank implements Pembayaran {
+    private String nomorRekening;
+
+    public TransferBank(String nomorRekening) {
+        this.nomorRekening = nomorRekening;
+    }
+
+    @Override
+    public void prosesPembayaran(double jumlah) {
+        System.out.println("Processing Bank Transfer payment: Rp " + jumlah);
+        System.out.println("Payment successful via Bank Transfer");
+    }
 }

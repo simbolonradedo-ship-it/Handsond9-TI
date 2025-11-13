@@ -1,4 +1,7 @@
 package latihan4.payment;
 
-public class Payment {
+public interface Payment {
+    boolean processPayment(double amount);
+    String getPaymentMethod();
+    String getTransactionId();
 }

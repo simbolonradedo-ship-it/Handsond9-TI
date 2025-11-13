@@ -1,4 +1,7 @@
 package latihan2;
 
-public class Terbang {
+public interface Terbang {
+    void lepasLandas();
+    void terbang();
+    void mendarat();
 }
